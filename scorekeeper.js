@@ -11,11 +11,11 @@ const p2 = {
  function updateScores(player, opponent) {
    if(!isgameover)
   {
-     player +=1;
+     player.score +=1;
      if(player.score === winningscore) {
      isgameover = true;
-     player.classList.add('has-text-success');
-     opponent.classList.add('has-text-danger');
+     player.display.classList.add('has-text-success');
+     opponent.display.classList.add('has-text-danger');
      player.button.disabled = true;
      opponent.button.disabled = true;
   }
